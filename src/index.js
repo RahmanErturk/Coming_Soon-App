@@ -89,8 +89,8 @@ const addEvent = (event) => {
     const activity = {
       id: btnID,
       name: inputEventName.value,
-      date: "Date: " + inputEventDate.value,
-      time: "Time: " + inputEventTime.value,
+      date: inputEventDate.value,
+      time: inputEventTime.value,
     };
 
     const events = JSON.parse(localStorage.getItem("events"));
